@@ -5,14 +5,11 @@
         <meta name="author" content="Gerwin Chan,Kelvin Fung">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="css/960.css">
-       
          
     </head>
     <body>
-        
        <nav>
         <div id='cssmenu'>
-            <a href="indexlogin.html"><input type="image" src="Afbeeldingen/sign_in_button.png" id="button2" value="Log in"</a>
                 <ul class="knoppen">
                     <li class='active'><a id="ewa" href='#home'><span>FRICS</span></a></li>
                     <li><a href='#men'><span>MEN</span></a></li>
@@ -20,7 +17,6 @@
                     <li><a href='#underwear'><span>UNDERWEAR</span></a></li>
                     <li><a href='#shoes'><span>SHOES</span></a></li>
                     <li class='last'><a href='#accessoires'><span>ACCESSOIRES</span></a></li>
-                
                 </ul>
         </div>
         </nav>
@@ -30,7 +26,6 @@
               
                 <br>
                 <img src="Afbeeldingen/2000px-Acme_Markets_lolo.svg.png" id="acme">
-                
             </div>
             <div id="men" class="paneel">
                 <img src="Afbeeldingen/men.jpg" id="banner">
@@ -272,96 +267,11 @@ Boxershorts in uni en dessin in 2-pack
                 </div>
             </div>
             <br>
-            
+           
         </div>
-        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
-        <script>
-        jQuery(document).ready(function ($) {
-            
-            var jssor_1_SlideshowTransitions = [
-              {$Duration:1200,$Opacity:2}
-            ];
-            
-            var jssor_1_options = {
-              $AutoPlay: true,
-              $SlideshowOptions: {
-                $Class: $JssorSlideshowRunner$,
-                $Transitions: jssor_1_SlideshowTransitions,
-                $TransitionsOrder: 1
-              },
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-            
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-            
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizing
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 600);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $(window).bind("load", ScaleSlider);
-            $(window).bind("resize", ScaleSlider);
-            $(window).bind("orientationchange", ScaleSlider);
-            //responsive code end
-        });
-    </script>
-        
-
-
-    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-        </div>
-        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="Afbeeldingen/men.jpg" />
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="Afbeeldingen/womenBannerFrics.png" />
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="Afbeeldingen/underwear.png" />
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="Afbeeldingen/shoe.jpg" />
-            </div>
-             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="Afbeeldingen/ass.jpg" />
-            </div>
-            <a data-u="ad" href="http://www.jssor.com" style="display:none">Responsive Slider</a>
-        
-        </div>
-          <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
-            <!-- bullet navigator item prototype -->
-            <div data-u="prototype" style="width:16px;height:16px;"></div>
-        </div>
-        <!-- Arrow Navigator -->
-        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
-        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
-    </div>
-        
         <footer></footer>
         <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="script.js"></script>
-            
-        <!--<script src="script3.js"></script>-->
-        
+        <script src="script3.js"></script>
     </body>
-    
 </html>
